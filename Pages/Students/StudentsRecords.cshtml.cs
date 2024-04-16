@@ -12,7 +12,7 @@ namespace Library.Pages.Students
         {
             try
             {
-                String connectionString = "Data Source=st10356476studentsrecords.database.windows.net;Initial Catalog=studentsRecords;User ID=AdminSQL-studentsRecords;Password=Munyai@1;\r\n";
+                String connectionString = "[Insert Connection String]";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
