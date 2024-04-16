@@ -1,4 +1,3 @@
-﻿Drop TABLE IF EXISTS StudentsRecords;
 
 CREATE TABLE StudentsRecords (
     ID INT PRIMARY KEY IDENTITY,
