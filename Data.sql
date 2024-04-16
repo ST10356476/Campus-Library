@@ -1,4 +1,4 @@
-﻿INSERT INTO studentsRecords (BookTitle, AuthorName, StudentNumber, CellNumber, ParentNumber, HomeAddress, CampusName)
+﻿INSERT INTO StudentsRecords (BookTitle, AuthorName, StudentNumber, CellNumber, ParentNumber, HomeAddress, CampusName)
 VALUES
 ('The Secret Garden', 'Nomvula Mbatha', 'St12345678', '083-123-4567', '082-987-6543', '123 Spring Street, Johannesburg', 'Pretoria Campus'),
 ('Things Fall Apart', 'Thabo Mokoena', 'St23456789', '071-234-5678', '072-876-5432', '456 Summer Road, Cape Town', 'Sandton Campus'),
