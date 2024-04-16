@@ -1,0 +1,29 @@
+﻿@page
+@using System.Data.SqlClient;
+
+@{
+    try
+    {
+        string ID = Request.Query["ID"];
+
+        string connectionString = "Data Source=st10356476studentsrecords.database.windows.net;Initial Catalog=studentsRecords;User ID=AdminSQL-studentsRecords;Password=Munyai@1;\r\n";
+
+        using (SqlConnection connection = new SqlConnection(connectionString))
+        {
+            connection.Open();
+
+            string sql = "DELETE FROM StudentsRecords WHERE ID=@ID";
+            using (SqlCommand command = new SqlCommand(sql, connection))
+            {
+                command.Parameters.AddWithValue("@ID", ID);
+
+                command.ExecuteNonQuery();
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+    }
+
+    Response.Redirect("StudentsRecords");
+}

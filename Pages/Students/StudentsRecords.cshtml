@@ -1,0 +1,43 @@
+﻿@page
+@model Library.Pages.Students.StudentsRecordsModel
+@{
+}
+
+<br>
+<h2>Library Records</h2>
+<a class="btn btn-primary btn-sm" href="NewRecord">Add New Record</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Book Title</th>
+            <th>Author Name</th>
+            <th>Student Number</th> 
+            <th>Cell Number</th>
+            <th>Parent's Number</th>
+            <th>Home Address</th>
+            <th>Campus Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model.records)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.BookTitle</td>
+                <td>@item.AuthorName</td>
+                <td>@item.StudentNumber</td>
+                <td>@item.CellNumber</td>
+                <td>@item.ParentNumber</td>
+                <td>@item.HomeAddress</td>
+                <td>@item.CampusName</td>
+                <td>
+                    <a class="btn btn-primary btn-m" href="Edit?id=@item.ID">Edit</a>
+                    <a class="btn btn-primary btn-m" href="Delete?id=@item.ID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

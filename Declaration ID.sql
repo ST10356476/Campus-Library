@@ -1,0 +1,2 @@
+﻿DECLARE @ID INT;
+SET @ID = 1;
